@@ -9,10 +9,7 @@ int main() {
     int x, y;
     if ((scanf("%d %d", &x, &y) == 2) && (getc(stdin) == '\n')) {
         printf("%d %d %d ", sum(x, y), sub(x, y), mul(x, y));
-        if (y == 0)
-            printf("n/a");
-        else 
-            printf("%d", div(x, y));
+        (y == 0) ? printf("n/a") : printf("%d", div(x, y));
     } 
     else printf("n/a");
     
